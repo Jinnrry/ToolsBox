@@ -5,7 +5,7 @@
       <textarea v-model="json_data"></textarea>
     </div>
 
-    <el-button style="float: left" type="primary" @click="run">主要按钮</el-button>
+    <el-button style="float: left;margin-top: 250px" type="primary" @click="run"> > </el-button>
 
     <div id="struct" v-highlight>
       <pre><code v-html="go_struct"></code></pre>
@@ -88,6 +88,7 @@
     width: 40%;
     height: 600px;
     float: left;
+    margin-right: 16px;
   }
 
   #json textarea{
@@ -99,6 +100,8 @@
     float: left;
     width: 40%;
     height: 600px;
+    border: #2c3e50 1px solid;
+    margin-left: 10px;
   }
 
 </style>
