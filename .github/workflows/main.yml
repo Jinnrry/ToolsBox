@@ -9,7 +9,10 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Clone Code
+        run: |
+          git clone "https://github.com/Jinnrry/ToolsBox"
+          cd ToolsBox
       - uses: actions/setup-node@v1
         with:
           node-version: '16'
