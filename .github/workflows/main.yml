@@ -41,5 +41,6 @@ jobs:
           mv dist docs
           git add docs/.
           git commit --amend --no-edit
+          git pull
           git status
           git push "https://$GITHUB_TOKEN@github.com/$REPO_USERNAME/$DIST_REPO.git" main:main
