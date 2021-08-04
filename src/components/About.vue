@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div class="desc">该项目完全开源，<a href="https://github.com/Jinnrry/ToolsBox">Github地址</a></div>
+    <div class="desc">该项目完全开源，<a href="https://github.com/Jinnrry/ToolsBox">Github地址</a>
+    	新功能建议可以Issues中提出!
+    </div>
     <div class="desc">
 
 
