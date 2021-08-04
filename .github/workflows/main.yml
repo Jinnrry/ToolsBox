@@ -37,7 +37,7 @@ jobs:
           mv docs/CNAME dist
           rm -rf docs 
           mv dist docs
-          git add .
+          git add docs/.
           git commit --amend --no-edit
           git status
           git push "https://$GITHUB_TOKEN@github.com/$REPO_USERNAME/$DIST_REPO.git" main:main
