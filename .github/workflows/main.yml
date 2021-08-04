@@ -12,7 +12,6 @@ jobs:
       - name: Clone Code
         run: |
           git clone "https://github.com/Jinnrry/ToolsBox"
-          cd ToolsBox
       - uses: actions/setup-node@v1
         with:
           node-version: '16'
@@ -20,6 +19,7 @@ jobs:
       # 安装和构建
       - name: Install and Build
         run: |
+          cd ToolsBox
           npm install
           npm run build
 
@@ -32,11 +32,10 @@ jobs:
           # GitHub Token
           GITHUB_TOKEN: ${{ secrets.G_TOKEN }}
         run: |
+          cd ToolsBox
           git config --global user.email "Action@GitHub.com"
           git config --global user.name "GitHub Action"
           git status
-          npm install
-          npm run build
           mv docs/CNAME dist
           rm -rf docs 
           mv dist docs
